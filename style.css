@@ -27,24 +27,32 @@ img {
   --btn-padding: 1.2rem 3.2rem;
   --btn-b-radius: 0.5rem;
   --btn-border: 2px solid var(--fc-primary);
-  --btn-hover-bkg: var(var(--fc-primary))
+  --btn-hover-bkg: var(--fc-primary);
+  --nav-height: 12.2rem;
 }
 
 body {
   font-family: var(--ff-primary);
   font-size: var(--fs-texting);
-  background-image: url('https://i.imgur.com/wEFXGgB.png');
+  background-color: #272323;
+  background-image: url("https://i.imgur.com/wEFXGgB.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #272323;
   padding-inline: 7.2rem;
-  width: 100vw;
   height: 100vh;
+  width: 100vw;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - var(--nav-height));
 }
 
 nav {
-  height: 12.2rem;
-  width: 100vw;
+  height: var(--nav-height);
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -69,7 +77,6 @@ a:hover {
   align-items: center;
   justify-content: center;
   gap: 2.4rem;
-  height: 100%;
 }
 
 .content {
