@@ -45,11 +45,9 @@ body {
 }
 
 #app {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: calc(100% - var(--nav-height));
+  display: grid;
 }
 
 nav {
@@ -67,26 +65,38 @@ nav a {
   text-decoration: none;
 }
 
+.menu-item.selected {
+  font-weight: var(--fw-heading);
+  color: var(--fc-primary);
+}
+
 a:hover {
   font-weight: var(--fw-heading);
   color: var(--fc-primary);
 }
 
 .home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
+  align-self: center;
   gap: 2.4rem;
 }
 
 .content {
-  padding-inline: 6.3rem 3rem;
-
+  padding: 6.3rem 3rem;
+  display: grid;
+  justify-items: flex-start;
+  align-items: flex-start;
+  gap: 1.6rem;
+  height: fit-content;
 }
 
-.content h1 {
-  margin-bottom: 1.6rem;
+.content p {
+  font-size: var(--fs-texting);
+  font-weight: var(--fw-texting);
+  color: var(--fc-texting-heading);
+  line-height: var(--lh-texting);
+  max-width: 64.8rem;
 }
 
 h1 {
@@ -104,6 +114,7 @@ button {
   background: transparent;
   font-size: var(--fs-button);
   font-weight: var(--fw-heading);
+  width: fit-content;
 }
 
 button:hover {
