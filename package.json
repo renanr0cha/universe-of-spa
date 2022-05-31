@@ -1,0 +1,23 @@
+{
+  "name": "universe-of-spa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renanr0cha/universe-of-spa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renanr0cha/universe-of-spa/issues"
+  },
+  "homepage": "https://github.com/renanr0cha/universe-of-spa#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

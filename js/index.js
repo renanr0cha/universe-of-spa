@@ -18,25 +18,25 @@ const menuItems = document.querySelectorAll('.menu-item')
 
 //falta conseguir fazer o item do menu voltar pro anterior ao usar o 
 //botão voltar e tamb[em ao escrever manualmente o endereço 
-menuItems.forEach(element => {
-  element.addEventListener('click', () => {
-    menuItems.forEach(element => {
-      element.classList.remove("selected")
-    })
-    console.log(document.querySelector("#app div").classList.value)
-    switch(document.querySelector("#app div").classList.value) {
-      case "home":
-        element.classList.add("selected")
-        break
-      case "content exploration":
-        element.classList.add("selected")
-        break
-      case "content universe":
-        element.classList.add("selected")
-        break
-      default:
-        break
-    }
+// menuItems.forEach(element => {
+//   element.addEventListener('click', () => {
+//     menuItems.forEach(element => {
+//       element.classList.remove("selected")
+//     })
+//     console.log(document.querySelector("#app div").classList.value)
+//     switch(document.querySelector("#app div").classList.value) {
+//       case "home":
+//         element.classList.add("selected")
+//         break
+//       case "content exploration":
+//         element.classList.add("selected")
+//         break
+//       case "content universe":
+//         element.classList.add("selected")
+//         break
+//       default:
+//         break
+//     }
     
-  })
-})
+//   })
+// })
