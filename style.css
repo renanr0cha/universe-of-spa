@@ -35,7 +35,6 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-texting);
   background-color: #272323;
-  background-image: url("./images/mountains-universe-1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -85,10 +84,11 @@ a:hover {
 .content {
   padding: 6.3rem 3rem;
   display: grid;
-  justify-items: flex-start;
-  align-items: flex-start;
+  justify-items: left;
+  align-items: stretch;
   gap: 1.6rem;
-  height: fit-content;
+  height: 43.3rem;
+  border: 1px solid red;
 }
 
 .content p {
@@ -96,7 +96,7 @@ a:hover {
   font-weight: var(--fw-texting);
   color: var(--fc-texting-heading);
   line-height: var(--lh-texting);
-  max-width: 64.8rem;
+  max-width: 65rem;
 }
 
 h1 {
